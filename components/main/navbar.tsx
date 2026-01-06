@@ -196,9 +196,16 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* Social Icons (Web) - now empty since everything moved to dropdown */}
+        {/* Login Button */}
         <div className="hidden md:flex flex-row gap-5">
-          {/* Content moved to Contact Us dropdown */}
+          <Link
+            href="https://robotech-scoring.web.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 whitespace-nowrap"
+          >
+            Login
+          </Link>
         </div>
 
         {/* Hamburger Menu */}
@@ -241,6 +248,17 @@ export const Navbar = () => {
               )
             )}
             
+            {/* Login Button in Mobile */}
+            <Link
+              href="https://robotech-scoring.web.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Login
+            </Link>
+
             {/* Contact Section in Mobile */}
             <div className="mt-4 pt-4 border-t border-[rgba(112,66,248,0.2)] text-center">
               <p className="text-sm text-gray-400 mb-3">Contact Us</p>

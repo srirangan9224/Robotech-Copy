@@ -54,16 +54,26 @@ export const HeroContent = () => {
           year! 
         </motion.p>
 
-       <motion.a
-        variants={slideInFromLeft(1)}
-        className="py-2 text-center cursor-pointer rounded-lg max-w-[500px] bg-yellow-500 text-black font-semibold hover:bg-yellow-400 transition duration-300 w-full md:w-auto px-6 md:px-10 flex items-center justify-center"
-        href="
-https://luma.com/suep29g0"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        APPLY HERE
-      </motion.a>
+       <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+        <motion.a
+          variants={slideInFromLeft(1)}
+          className="py-2 text-center cursor-pointer rounded-lg bg-yellow-500 text-black font-semibold hover:bg-yellow-400 transition duration-300 px-6 md:px-10 flex items-center justify-center"
+          href="https://luma.com/suep29g0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          APPLY HERE
+        </motion.a>
+
+        <a
+          className="py-2 text-center cursor-pointer rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition duration-300 px-6 md:px-10 flex items-center justify-center"
+          href="https://robotech-scoring.web.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LOGIN
+        </a>
+      </div>
       </div>
 
       <motion.div
